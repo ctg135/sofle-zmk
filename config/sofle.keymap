@@ -43,11 +43,11 @@
             //               | GUI | DEL  |LSHIFT| LOWER|  ENTER |  | SPACE | RAISE|BACKSPC| ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4          &kp N5                            &kp N6     &kp N7         &kp N8        &kp N9    &kp N0    &kp MINUS
-&kp ESC    &kp Q   &kp W     &kp E    &kp R           &kp T                             &kp Y      &kp U          &kp I         &kp O     &kp P     &kp LEFT_BRACKET
-&kp TAB    &kp A   &kp S     &kp D    &kp F           &kp G                             &kp H      &kp J          &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X     &kp C    &kp V           &kp B      &kp C_MUTE    &none    &kp N      &kp M          &kp COMMA     &kp DOT   &kp FSLH  &kp RBKT
-                   &kp LGUI  &kp DEL  &kp LEFT_SHIFT  &mo LOWER  &kp SPACE     &kp RET  &mo RAISE  &kp BACKSPACE  &kp LEFT_ALT  &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4          &kp N5                            &kp N6     &kp N7         &kp N8          &kp N9        &kp N0    &kp MINUS
+&kp ESC    &kp Q   &kp W     &kp E    &kp R           &kp T                             &kp Y      &kp U          &kp I           &kp O         &kp P     &kp LEFT_BRACKET
+&kp TAB    &kp A   &kp S     &kp D    &kp F           &kp G                             &kp H      &kp J          &kp K           &kp L         &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X     &kp C    &kp V           &kp B      &kp C_MUTE    &none    &kp N      &kp M          &kp COMMA       &kp DOT       &kp FSLH  &kp RBKT
+                   &kp LGUI  &kp DEL  &kp LEFT_SHIFT  &mo LOWER  &kp SPACE     &kp RET  &mo RAISE  &kp BACKSPACE  &kp LA(LSHIFT)  &kp LEFT_ALT
             >;
 
             sensor-bindings =
@@ -58,18 +58,19 @@
         lower_layer {
             display-name = "lower";
 
-// ------------------------------------------------------------------------------------------------------------
-// |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-// |       |   1 |   2 |   3  |   4  |   5  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
-// |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |       |
-// |       |  -  |  _  |  [   |  {   |  \   |        |  |       |  |   |  }    |  ]    |  =   |   +   |       |
-//               |     |      |      |      |        |  |       |      |       |       |      |
+            // ------------------------------------------------------------------------------------------------------------
+            // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
+            // |       |   1 |   2 |   3  |   4  |   5  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
+            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |       |
+            // |       |  -  |  _  |  [   |  {   |  \   |        |  |       |  |   |  }    |  ]    |  =   |   +   |       |
+            //               |     |      |      |      |        |  |       |      |       |       |      |
+
             bindings = <
-&trans &kp F1    &kp F2    &kp F3   &kp F4    &kp F5                           &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
-&trans &kp N1    &kp N2    &kp N3   &kp N4    &kp N5                           &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
-&trans &kp EXCL  &kp AT    &kp HASH &kp DLLR  &kp PRCNT                        &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans
-&trans &kp MINUS &kp UNDER &kp LBKT &kp LBRC  &kp BSLH          &trans  &trans &kp PIPE  &kp RBRC &kp RBKT        &kp EQUAL &kp PLUS  &trans
-&trans        &trans        &trans        &trans        &trans    &trans  &trans      &trans            &trans      &trans
+&trans  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
+&trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
+&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &trans
+&trans  &kp MINUS  &kp UNDER  &kp LBKT  &kp LBRC  &kp BSLH   &trans    &trans  &kp PIPE   &kp RBRC  &kp RBKT         &kp EQUAL  &kp PLUS  &trans
+                   &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans           &trans
             >;
 
             sensor-bindings =
