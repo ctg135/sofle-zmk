@@ -27,7 +27,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        m_tmp {
+            bindings = <&kp M>;
+            key-positions = <44 46>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
